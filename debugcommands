@@ -1,0 +1,9 @@
+kafka-console-consumer --topic org.chicago.cta.stations.table.v1 --bootstrap-server PLAINTEXT://localhost:9092 --from-beginning
+kafka-console-consumer --topic producers.connector.stations --bootstrap-server PLAINTEXT://localhost:9092 --from-beginning
+kafka-topics --list --zookeeper zookeeper:2181 
+kafka-console-consumer --topic consumers.faust_stream.transformed-station --bootstrap-server PLAINTEXT://localhost:9092 --from-beginning
+kafka-topics --describe  --zookeeper zookeeper:2181  --topic producers.connector.stations 
+kafka-topics --describe  --zookeeper zookeeper:2181  --topic org.chicago.cta.stations.table.v1 
+kafka-console-consumer --topic org.chicago.cta.stations.table.v1  --bootstrap-server PLAINTEXT://localhost:9092 --from-beginning
+kafka-console-consumer --topic org.chicago.cta.station.arrivals.granville --bootstrap-server PLAINTEXT://localhost:9092 --from-beginning
+kafka-console-consumer --topic TURNSTILE_SUMMARY --bootstrap-server PLAINTEXT://localhost:9092 --from-beginning

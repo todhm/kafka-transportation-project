@@ -1,0 +1,11 @@
+{
+  "namespace": "producers.models",
+  "type": "record",
+  "name": "arrival.key",
+  "fields": [
+    {
+      "name": "timestamp",
+      "type": "long"
+    }
+  ]
+}

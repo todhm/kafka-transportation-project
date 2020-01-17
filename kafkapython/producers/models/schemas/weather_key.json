@@ -1,0 +1,11 @@
+{
+  "namespace": "producers.models",
+  "type": "record",
+  "name": "weather.key",
+  "fields": [
+    {
+      "name": "timestamp",
+      "type": "long"
+    }
+  ]
+}
